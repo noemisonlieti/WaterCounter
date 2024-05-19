@@ -1,0 +1,39 @@
+%CounterButtons {
+    color: $white-color;
+    background-color: $blue-color;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+
+    &:hover {
+        color: $blue-color;
+        background-color: $white-color;
+    }
+}
+
+.minus,.reset,.plus {
+    @extend %CounterButtons;
+    width: 50px;
+    margin: 10px;
+}
+
+.check {
+    @extend %CounterButtons;
+    width: 120px;
+    margin: 10px;
+}
+
+.close-btn {
+    @extend %CounterButtons;
+    width: 50px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+//Media queries
+@media only screen and (min-width: 576px) {
+    .minus,.reset,.plus,.check,.close-btn {
+       cursor: pointer;
+    }
+}

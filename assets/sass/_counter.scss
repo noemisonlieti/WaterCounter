@@ -1,0 +1,23 @@
+.card-container{
+    margin-top: 4rem;
+
+    .counter-card {
+        .operators-buttons-container {
+            margin-top: 0.5rem;
+        }
+
+        .check-button-container {
+            margin-top: 0.5rem;
+        }        
+    }
+
+    .hide-card {
+        visibility: hidden;
+    }
+
+    .show-modal {
+        visibility: visible;
+    }
+}
+
+    

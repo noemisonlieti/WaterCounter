@@ -1,0 +1,39 @@
+h1, .water-question,.number {
+    color: $white-color;
+}
+
+.water-question {
+    width: 300px;
+}
+
+.number {
+    font-size: 100px;
+}
+
+//Modal
+%ModalContent {
+    color: $white-color;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.modal-text{ 
+    @extend %ModalContent;
+    font-size: 14px;
+    margin: -5rem 1rem 0;   
+}
+
+.modal-note {
+    @extend %ModalContent;
+    font-size: 12px;
+    margin: 0 1rem;
+    position: fixed;
+    bottom: 3rem; 
+}
+
+// Media queries tablet and desktop
+@media only screen and (min-width: 576px) {
+    .water-question {
+        width: 340px;
+    }
+}
