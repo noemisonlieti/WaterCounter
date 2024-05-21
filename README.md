@@ -2,8 +2,9 @@
 
 A counter to let you track and check your daily water intake.
 
-Water Counter is designed to help users staying hydrated and healty. 
+![WaterCounter](https://github.com/noemisonlieti/WaterCounter/blob/main/assets/media/img/WaterCounter-screen.jpg)
 
+Water Counter is designed to help users staying hydrated and healty. 
 
 ## About
 
@@ -20,7 +21,13 @@ _All additional functionalities deemed necessary are allowed._
 ### How it works
 
 Thanks to Water Counter, users can monitor the number of water glasses they drink in a day.
-The **+** and *-* button makes the number increase or decrease, while the *reset* button allows to reset the number at any time. 
+The **+** and **-** **button** makes the number increase or decrease, while the **reset** button allows to reset the number at any time. 
+
+### Additional functionalities
+
+By clicking the **'check' button**, a **modal window** appears with **a message that adapts to the number of glasses of water consumed**. If the number of glasses is 10 or more, a congratulatory message is displayed, while if it is less than 10, an encouraging message to drink more is shown.
+
+*Note: The European Food Safety Authority (EFSA) recommends that healthy adults consume at least 2 liters of water per day, assuming moderate environmental temperatures and medium levels of physical activity. Based on this guideline, I have set the daily water intake to 10 standard glasses, each with a capacity of 200 milliliters.*
 
 ### Languages
 
