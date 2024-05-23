@@ -8,10 +8,6 @@ A counter to let you track and check your daily water intake.
 
 JavaScript Basics Project for the Full Stack Developer course at start2impact University
 
-### Description
-
-Water Counter is designed to help users stay hydrated and healthy by providing a simple and effective way to track and check their daily water intake.
-
 ### Technical requirements
 
 _The application must be developed with JavaScript._ 
@@ -19,6 +15,10 @@ _The use of jQuery is not allowed, and neither is the use of any frameworks (Rea
 _The use of external JavaScript libraries is allowed if necessary. The +/- buttons and the display of the counter value must be built using DOM manipulation with JavaScript._ 
 _Once the elements are built with JavaScript, the function to increase and decrease the counter value must be implemented._ 
 _All additional functionalities deemed necessary are allowed._
+
+### Description
+
+Water Counter is designed to help users stay hydrated and healthy by providing a simple and effective way to track and check their daily water intake.
 
 ### How it works
 
