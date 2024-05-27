@@ -16,7 +16,7 @@ _The use of external JavaScript libraries is allowed if necessary. The +/- butto
 _Once the elements are built with JavaScript, the function to increase and decrease the counter value must be implemented._ 
 _All additional functionalities deemed necessary are allowed._
 
-[Click here](https://drive.google.com/file/d/1Hrh_TFJ1e8tslP84QzLSDYd8DreBW-YY/view?usp=sharing) for the full project requirements
+[Click here](https://drive.google.com/file/d/1Hrh_TFJ1e8tslP84QzLSDYd8DreBW-YY/view?usp=sharing) for the full project requirements (Italian)
 
 ### Description
 
@@ -42,9 +42,11 @@ By clicking the **'check' button**, a **modal window** appears with **a message 
 - CSS (SASS)
 - JavaScript
 
+## Watch it on Vercel
+https://watercounter.vercel.app/
+
 ## Presentation
 
 [Project Presentation (Italian)](https://drive.google.com/file/d/1Hl6P1Zay4w6PfVY0GUcz91-TOki-w7pS/view?usp=sharing)
 
-## Watch it on Vercel
-https://watercounter.vercel.app/
+
