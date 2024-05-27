@@ -6,7 +6,7 @@ A counter to let you track and check your daily water intake.
 
 ## About
 
-JavaScript Basics Project for the Full Stack Developer course at start2impact University
+JavaScript Basics Project for the Full Stack Developer course at start2impact University.
 
 ### Technical requirements
 
@@ -15,6 +15,8 @@ _The use of jQuery is not allowed, and neither is the use of any frameworks (Rea
 _The use of external JavaScript libraries is allowed if necessary. The +/- buttons and the display of the counter value must be built using DOM manipulation with JavaScript._ 
 _Once the elements are built with JavaScript, the function to increase and decrease the counter value must be implemented._ 
 _All additional functionalities deemed necessary are allowed._
+
+[Click here](https://drive.google.com/file/d/1Hrh_TFJ1e8tslP84QzLSDYd8DreBW-YY/view?usp=sharing) for the full project requirements
 
 ### Description
 
@@ -40,6 +42,9 @@ By clicking the **'check' button**, a **modal window** appears with **a message 
 - CSS (SASS)
 - JavaScript
 
-## Presentazione
+## Presentation
 
-[Qui](https://drive.google.com/open?id=16GzDFWF8PyskIwP26MfHAioqr6EDRpUe&usp=drive_fs) la presentazione del progetto
+[Project Presentation (Italian)](https://drive.google.com/file/d/1Hl6P1Zay4w6PfVY0GUcz91-TOki-w7pS/view?usp=sharing)
+
+## Watch it on Vercel
+https://watercounter.vercel.app/
