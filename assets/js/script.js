@@ -52,30 +52,7 @@ divOperatorsButtonsContainer.insertAdjacentElement("afterend", divCheckButtonCon
 const checkButton = createElement("button", "check", "Check"); 
 divCheckButtonContainer.appendChild(checkButton);
 
-// Counter 
-let counter = 0;
-const minCount = 0;
-
-plusButton.addEventListener('click', () => {
-    counter++;
-    counterNumber.textContent = counter;
-});
-
-minusButton.addEventListener('click', () => {
-    if (counter > minCount) {
-        counter--;
-        counterNumber.textContent = counter;
-    }
-});
-
-resetButton.addEventListener('click', () => {
-    counter = 0;
-    counterNumber.textContent = counter;
-});
-
-// ADDITIONAL PROJECT FEATURES
-
-// Creating elements - Modal
+// Creating elements - Modal (ADDITIONAL PROJECT FEATURE)
 const divWaterModal = createElement("div", "water-modal-card");
 divCounterCard.insertAdjacentElement("afterend", divWaterModal);
 
@@ -94,21 +71,43 @@ waterModalNote.insertAdjacentElement("afterend", waterModalCloseButton);
 const closeIcon = createElement("i", "fa-solid fa-xmark");
 waterModalCloseButton.appendChild(closeIcon);
 
-//checkButton event
-checkButton.addEventListener("click", function () {
-    divWaterModal.classList.add("show-modal");
-    divCounterCard.classList.add("hide-card");
-    if (counter < 10) {
-        waterModalTitle.textContent = "Stay Hydrated!";
-        waterModalText.textContent = "You drank less than 10 glasses* of water today!\n Aim for at least 10 glasses* to keep your body running smoothly! \n Remember, drinking enough water helps eliminate waste, promotes muscle growth, and maintains overall health. \nKeep sipping!";
-    } else {
-        waterModalTitle.textContent = "Congratulations!";
-        waterModalText.textContent = "You drank 10 or more glasses* of water today!\n Keep up the great work and stay hydrated for optimal physical and cognitive function!";
+// Counter 
+let counter = 0;
+const minCount = 0;
+
+//Adding Event Listener using Event Delegation
+divCardContainer.addEventListener("click", event => {
+    const target = event.target;
+
+    // targeting operators buttons 
+    if (target.matches('.plus')) {
+        counter++;
+    }  else if (target.matches('.minus')) {
+        if (counter > minCount) {
+            counter--;
+        }
+    } else if (target.matches(".reset") || target.matches(".fa-arrow-rotate-right")) {
+        counter = 0;
+    } 
+    counterNumber.textContent = counter;
+
+    // targeting checkButton (ADDITIONAL PROJECT FEATURE)
+    if (target.matches('.check')){ 
+        divWaterModal.classList.add("show-modal");
+        divCounterCard.classList.add("hide-card");
+        if (counter < 10) {
+            waterModalTitle.textContent = "Stay Hydrated!";
+            waterModalText.textContent = "You drank less than 10 glasses* of water today!\n Aim for at least 10 glasses* to keep your body running smoothly! \n Remember, drinking enough water helps eliminate waste, promotes muscle growth, and maintains overall health. \nKeep sipping!";
+        } else {
+            waterModalTitle.textContent = "Congratulations!";
+            waterModalText.textContent = "You drank 10 or more glasses* of water today!\n Keep up the great work and stay hydrated for optimal physical and cognitive function!";
+        }  
+    } 
+
+    // targeting modal-closing button (ADDITIONAL PROJECT FEATURE)
+    if (target.matches(".close-btn") || target.matches(".fa-solid fa-xmark")) {
+        divWaterModal.classList.remove("show-modal");
+        divCounterCard.classList.remove("hide-card");
     }
 });
 
-//event for modal-closing button
-waterModalCloseButton.addEventListener("click", function () {
-    divWaterModal.classList.remove("show-modal");
-    divCounterCard.classList.remove("hide-card");
-});
