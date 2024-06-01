@@ -109,6 +109,6 @@ divCardContainer.addEventListener("click", event => {
         divWaterModal.classList.remove("show-modal");
         divCounterCard.classList.remove("hide-card");
     }
-});
+}); 
 
  
