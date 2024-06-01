@@ -111,3 +111,4 @@ divCardContainer.addEventListener("click", event => {
     }
 });
 
+ 
