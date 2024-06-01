@@ -105,7 +105,7 @@ divCardContainer.addEventListener("click", event => {
     } 
 
     // targeting modal-closing button (ADDITIONAL PROJECT FEATURE)
-    if (target.matches(".close-btn") || target.matches(".fa-solid fa-xmark")) {
+    if (target.matches(".close-btn") || target.matches(".fa-xmark")) {
         divWaterModal.classList.remove("show-modal");
         divCounterCard.classList.remove("hide-card");
     }
